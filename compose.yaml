@@ -6,7 +6,5 @@ services:
     network_mode: "host"
     ports:
       - "8000:8000"
-    volumes:
-      - ./etc/astra:/etc/astra
     tty: true
     stdin_open: true  
