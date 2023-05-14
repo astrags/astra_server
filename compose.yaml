@@ -10,4 +10,5 @@ services:
     - type: volume
       source: ./etc/astra
       target: /etc/astra
-      
+volumes:
+/etc/astra
