@@ -7,4 +7,4 @@ RUN apt-get update && apt install -y curl
 RUN curl -Lo /usr/bin/astra https://cesbo.com/astra-latest
 RUN chmod +x /usr/bin/astra
 RUN mkdir /etc/astra
-RUN astra -c /etc/astra/astra8000.conf -p 8000
+CMD astra -c /etc/astra/astra8000.conf -p 8000
