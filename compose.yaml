@@ -5,9 +5,9 @@ services:
     image: astra_cesbo_server:latest
     network_mode: "host"
     ports:
-      -"8000:8000"
+      - "8000:8000"
     volumes:
-    - type: bind
+    - type: volume
       source: ./etc/astra
       target: /etc/astra
       
