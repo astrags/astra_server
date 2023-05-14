@@ -1,7 +1,10 @@
-version: '3'
+version: '1'
 
 services:
-  app:
-    image: ubuntu:22.04
+  astra_cesbo_server:
+    image: astra_cesbo_server:latest
     network_mode: "host"
-    command: bash -c "apt-get update && apt-get install -y curl"
+    ports:
+      -"8000:8000"
+    volumes:
+      - . /etc/astra/: /etc/astra/
