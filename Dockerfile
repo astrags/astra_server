@@ -7,4 +7,4 @@ RUN apt-get update && apt install -y curl
 RUN curl -Lo /usr/bin/astra https://cesbo.com/astra-latest
 RUN chmod +x /usr/bin/astra
 VOLUME ["/etc/astra"]
-CMD /bin/bash
+
