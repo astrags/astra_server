@@ -11,4 +11,4 @@ services:
       source: ./etc/astra
       target: /etc/astra
 volumes:
-/etc/astra
+/etc/astra:
