@@ -6,5 +6,5 @@ RUN apt-get update && apt install -y curl
 # install app Astra Server from official site https://cesbo.com/en/latest/astra 
 RUN curl -Lo /usr/bin/astra https://cesbo.com/astra-latest
 RUN chmod +x /usr/bin/astra
-RUN mkdir /etc/astra
+VOLUME ["/etc/astra"]
 CMD astra -c /etc/astra/astra8000.conf -p 8000
