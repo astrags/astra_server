@@ -7,8 +7,4 @@ services:
     ports:
       - "8000:8000"
     volumes:
-    - type: volume
-      source: ./etc/astra
-      target: /etc/astra
-volumes:
-/etc/astra:
+      - ./etc/astra: /etc/astra
