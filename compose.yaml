@@ -7,6 +7,6 @@ services:
     ports:
       -"8000:8000"
     volumes:
-      - . /etc/astra/: /etc/astra/
+      - /home/astra/astra_server/etc/astra/: /etc/astra/
 volumes:
-. /etc/astra/
+/home/astra/astra_server/etc/astra/
