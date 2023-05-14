@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:22.04
+FROM ubuntu:latest
 
 # install app dependencies
 RUN apt-get update && apt install -y curl
