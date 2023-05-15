@@ -7,6 +7,7 @@ RUN apt-get update && apt install -y curl
 RUN curl -Lo /usr/bin/astra https://cesbo.com/astra-latest
 RUN chmod +x /usr/bin/astra
 RUN mkdir /etc/astra
-COPY ./etc/astra/astra.conf /etc/astra/astra.conf
-COPY ./etc/astra/license.txt /etc/astra/license.txt
-CMD vi ads.txt
+ADD ./entrypoint.sh /entrypoint.sh
+ADD ./etc/astra/astra.conf /etc/astra/astra.conf
+ADD ./etc/astra/license.txt /etc/astra/license.txt
+ENTRYPOINT ["/entrypoint.sh"]
