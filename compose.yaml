@@ -5,6 +5,9 @@ services:
     image: astra_raw:latest
     network_mode: "host"
     ports:
-      - "8000:8000"
+      - "8000:8001"
+    volumes:
+      - ./etc/astra:/etc/astra
+      - /var/log/astra:/var/log/astra
     tty: true
     stdin_open: true  
