@@ -4,9 +4,5 @@ services:
   astra_cesbo_server:
     image: astra_raw:latest
     network_mode: "host"
-    ports:
-      - "8000:8001"
-    volumes:
-      - ./etc/astra:/etc/astra
     tty: true
     stdin_open: true  
