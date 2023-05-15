@@ -8,4 +8,4 @@ RUN curl -Lo /usr/bin/astra https://cesbo.com/astra-latest
 RUN chmod +x /usr/bin/astra
 VOLUME "/etc/astra"
 VOLUME "/var/log/astra"
-CMD astra -c /etc/astra/astra8000.conf -p 8000 --log /var/log/astra/astra.log --daemon
+#CMD astra -c /etc/astra/astra8000.conf -p 8000 --log /var/log/astra/astra.log --daemon
