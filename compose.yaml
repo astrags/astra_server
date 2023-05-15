@@ -3,7 +3,7 @@ version: '1'
 services:
   astra_cesbo_server:
     image: astra_raw:latest
-    network_mode: "host"
+#    network_mode: "host"
     ports:
       - "8000:8000"
 #    tty: true
