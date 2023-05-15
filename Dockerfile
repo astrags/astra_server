@@ -9,4 +9,5 @@ RUN chmod +x /usr/bin/astra
 RUN mkdir /etc/astra
 COPY ./etc/astra/astra.conf /etc/astra/astra.conf
 COPY ./etc/astra/license.txt /etc/astra/license.txt
-CMD astra -c /etc/astra/astra.conf -p 8000 --daemon
+ENTRYPOINT [ "/usr/bin/astra" ]
+CMD ["-c", "/etc/astra/astra.conf", "-p", "8000", "--daemon"]
