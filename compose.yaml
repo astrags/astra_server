@@ -8,5 +8,6 @@ services:
       - "8000:8001"
     volumes:
       - ./etc/astra:/etc/astra
+      - /var/log/astra:/var/log/astra
     tty: true
     stdin_open: true  
