@@ -11,4 +11,4 @@ ADD ./entrypoint.sh /entrypoint.sh
 #ADD ./etc/astra/astra.conf /etc/astra/astra.conf
 ADD ./etc/astra/license.txt /etc/astra/license.txt
 RUN chmod +x /entrypoint.sh && chmod -R 777 /etc/astra/
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
