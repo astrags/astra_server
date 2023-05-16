@@ -5,7 +5,7 @@ services:
     image: astra_raw:1.8000
     volumes:
       - ./etc/astra/license.txt:/etc/astra/license.txt
-      - ./etc/astra/astra.conf:/etc/astra/astra.conf
+    #  - ./etc/astra/astra.conf:/etc/astra/astra.conf
     ports:
       - "8000:8000"
     tty: true
