@@ -4,7 +4,7 @@ services:
   astra_cesbo_server:
     image: astra_raw:1.8000
     volumes:
-      - ./var/log/astra.log:/var/log/astra.log
+      - ./var/log/:/var/log/astra/
     #  - ./etc/astra/astra.conf:/etc/astra/astra.conf
     ports:
       - "8000:8000"
