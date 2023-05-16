@@ -5,4 +5,6 @@ ADD entrypoint.sh /entrypoint.sh
 RUN apt-get update && apt install -y curl \
 && curl -Lo /bin/astra https://cesbo.com/astra-latest \
 && chmod +x /bin/astra \
-&& chmod +x /entrypoint.sh 
+&& chmod 777 /bin/astra \
+&& chmod +x /entrypoint.sh \
+&& chmod 777 /entrypoint.sh
