@@ -2,8 +2,7 @@ version: '1'
 
 services:
   astra_cesbo_server:
-    image: astra_raw:latest
-    network_mode: "host"
+    image: astra_raw:1.8000
     volumes:
       - ./etc/astra/license.txt:/etc/astra/license.txt
       - ./etc/astra/astra.conf:/etc/astra/astra.conf
