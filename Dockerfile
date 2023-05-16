@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:22.04
+FROM alpine
 # install app dependencies
 ADD entrypoint.sh /entrypoint.sh
 RUN mkdir /etc/astra
