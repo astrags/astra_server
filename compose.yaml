@@ -4,10 +4,8 @@ services:
   astra_cesbo_server:
     image: astra_raw:1.8000
     volumes:
-      - ./var/log/:/var/log/astra/
+      - ./var/log/astra.log:/var/log/astra/astra.log
     #  - ./etc/astra/astra.conf:/etc/astra/astra.conf
     ports:
       - "8000:8000"
-    build:
-      dockerfile: Dockerfile
-      context: .
+    
