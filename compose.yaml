@@ -9,4 +9,5 @@ services:
       - ./etc/astra/astra.conf:/etc/astra/astra.conf
     ports:
       - "8000:8000"
+  
     
