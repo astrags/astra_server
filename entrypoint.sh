@@ -2,7 +2,7 @@
 set -e
 echo "starting astra"
 astra init
-command="/bin/astra -c /etc/astra/astra.conf -p 8000"
+command="astra -c /etc/astra/astra.conf -p 8000 --log /var/log/astra.log --daemon"
 echo $command
-$($command &)
+$($command)
 echo "astra started"
